@@ -1,7 +1,7 @@
 # Twilio Project (Divineforge)
 
-this project use `yarn` + `fastify` platform in nestJS framework.
+this project use `yarn` platform in nestJS framework.
 
-# Reference
+## Reference
 
 - Yarn cheatsheet <https://devhints.io/yarn>
