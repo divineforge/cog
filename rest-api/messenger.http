@@ -1,13 +1,13 @@
 
-@host = https://dforge-cog.herokuapp.com/
-//@host = http://localhost:3000
+@host = https://dforge-cog.herokuapp.com
+//@host = http://localhost:5000
 
 GET {{host}}/webhook?hub.verify_token=DFORGE_TOKEN&hub.challenge=CHALLENGE_ACCEPTED&hub.mode=subscribe
 
 ###
 
 POST {{host}}/webhook
-Content-Type: application/json;
+Content-Type: application/json
 
 {
     "object": "page", 
