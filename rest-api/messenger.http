@@ -1,8 +1,12 @@
-GET http://localhost:3000/webhook?hub.verify_token=DFORGE_TOKEN&hub.challenge=CHALLENGE_ACCEPTED&hub.mode=subscribe
+
+@host = https://dforge-cog.herokuapp.com/
+//@host = http://localhost:3000
+
+GET {{host}}/webhook?hub.verify_token=DFORGE_TOKEN&hub.challenge=CHALLENGE_ACCEPTED&hub.mode=subscribe
 
 ###
 
-POST http://localhost:3000/webhook
+POST {{host}}/webhook
 Content-Type: application/json;
 
 {
